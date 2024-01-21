@@ -1,93 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="main.css"/>
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PFD Blog</title>
 
+     <title>PHPJabbers.com | Free Blog Website Template</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
-    <div class="title">
-    <b><h1>Portfolio Development Blog</h1></b>
-    <u><h2>Week 1</h2></u>
-    <p>For week 1, I was very impressed with Mr Low's experience in Engineering and Programming where he told us about his time in ST Engineering creating the weapons and 
-        coding the Moovita with Go in just 3 days. I thought of the problem statement, How would the data from some of these examples be collected, 
-        collated, stored, retrieved, analyzed and some value be derived for use by the industry? and came up with a security card with OpenCV. I was being chosen as one of the 
-        team leaders and chose my team members. After meeting my team, we collated our ideas with the below:<br>
-        <br>
-        1. Implement a security card connected to the employees phone and a tracker that will automatically start functioning to track the location once the employee taps in his card to begins his shift. It will also contain an AI sensor to help identify any employees nearby.
-        This helps to make sure the employee is able to do his shift with no restricitons.<br>
-        <br>
-        2. Cameras that utilise OpenCV to record attendance in a classroom and monitor whether students leave early and ensure that lecturers come on time. Students & staff can scan & save their face on the Ngee Ann mobile app. 
-        This prevents students from signing for their friends who are absent & also saves lecturers some hassle. As a side benefit, this reduces wasted time at the start of lessons used for attendance taking.
-        This can be further implemented by companies to record employee attendance with a companion internal app.
-        <br>
-       
-        3. We can use cameras to track employees when they check in and out. These cameras use facial recognition to identify and track individuals, which can be used to create detailed profiles of employees, including their movements, associations, and activities.
-        In the context of a company tracking its employees, this technology could be used to track employees' arrival and departure times, their movements around the office, and who they interact with. This data could then be used to create detailed profiles of employees,
-        which could be used for a variety of purposes, such as performance management, security, or even to influence employee behavior.
-        <br>
-        
-        4. A App that the worker need to install, the App can use company wifi and GPS, when worker walk-in they auto connect to the company wifi, this can collect data about when they enter and exit. 
-        With GPS can track the peoples movement in the company to collect data, for instance if the people move a lot during 11am-1pm that means during that period it is busy.
-        <br>
-        
-        We decided on the second option as it is a fulfilling project to work on since it is unique compared to the other options and it is challenging enough for us. 
-        <img src = "Week1Pt1.PNG">
-        <img src = "Week1Pt2.PNG">
-    </p>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
 
 
-    </div><u><h2>Week 2</h2></u>
-    <p>For week 2, we reviewed the project and we decided to assign roles for each of our 4 members. We also added an inception deck, and discussed about the Elevator Pitch and Product Box in
-       Our main objective is to improve attendance taking by enhancing security and efficiency. We also decided on the product name which is FRATS,Facial Recognition Attendance Taking System,
-       and our slogan is Better implementation of Artificial Intelligence to everyday Life for all. I also started working on my sqlite database where I installed sqlite3 on my computer and
-       tinkered with it a little. The roles are as follows:
-       - OpenCV and Facial Recognition: Reginald
-       - Database: Peter
-       - Website Design FrontEnd: Jai
-       - Website backend: Qi Yang 
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
 
-       Besides doing the project, I learnt 5 ways of design thinking: Emphatize, Define, Ideate, Prototype and Test. Emphatizing is the understanding of the needs, desires, and challenges of the users or customers by putting yourself in their shoes.
-       Design is defining the problem statement and identifying the goals and objectives of the design project. It is used by defining the core problem or challenge. Ideate is generating a wide range of ideas and potential solutions to address the defined problem
-       like BrainStorming. Prototyping is the process of creating a tangible representation of the ideas generated during the ideation phase. Lastly, testing where designers collect feedback and assess the prototypes with the intended users.
-       This feedback provides valuable insights for designers to assess the effectiveness of their solutions in meeting user needs and identify areas that require improvement.
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
 
-        <img src="Wk2">
-    </p>
-    </div>
-</div><u><h2>Week 3</h2></u>
-<p>For week 3, I have mainly decided to use sqlite. It can be used with python to store image data from opencv. It can store
-    data using binary that can be easily transferred to an image if needed. 
-    So I have created my frats.db database using sqlite3 for storing the image information. I have read up and researched
-    about my teammates roles and added a template file on using python to connect OpenCV with the database and the website for QiYang.
-    I also helped out by curating some opencv files and passing them to Reginald. I created a database table called userinfo on local disk.
-    <img src = "Wk3-2.PNG">
-    <img src="Wk3"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-</p>
-</div>
-</div><u><h2>Week 4</h2></u>
-<p>For week 4, I have finished the sqlite database. 
-   I have also created a python script to get download the image from the database and fixed some minor issues with the code.
-    I also checked up on my teammates progress and it looks nearly finished. Jai had produced the front end, QiYang has helped with
-    fixing bugs and creating the python script to connect sqlite database to the online website using flask, reginald has
-    reassured us that he is nearly finished with openCV part.
-</p>
-<img src = "Wk4Database">
-<br>
-</div><u><h2>Week 5</h2></u>
-<p>For week 5, I have reupdated the opencv file to help Reginald, and fixed some bugs in my database.
-    On day 2, I also helped add more test cases so Qi Yang can test and see everything is working. Other than that,
-    I tried helping my teammates if they needed since I finished implementing my database. It was at this moment that I 
-    realised that Reginald have not finished making the comparating images part of OpenCV. Earlier, we misunderstood when
-    he said he will take charge of all the openCV parts. However, it is too late to add anything and we had to do our presentation.
- </p>
- <img src = "Wk5-1">
- <img src = "Wk5-2">
+                    <!-- lOGO TEXT HERE -->
+                    <a href="#" class="navbar-brand">Blog Website</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li class="active"><a href="index.html">Blog</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+     <section>
+          <div class="container">
+               <div class="text-center">
+                    <h1>Blog posts</h1>
+
+                    <br>
+
+                    <p class="lead">Blog Posts for PFD (by Peter Liau S10243387J)</p>
+               </div>
+          </div>
+     </section>
+
+     <section class="section-background">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-3 pull-right col-xs-12">
+                         <div class="form">
+                              <form action="#">
+                                   <div class="form-group">
+                                        <label class="control-label">Blog Search</label>
+
+                                        <div class="input-group">
+                                             <input type="text" class="form-control" placeholder="Search for...">
+                                             <span class="input-group-btn">
+                                                  <button class="btn btn-default" type="button">Go!</button>
+                                             </span>
+                                        </div>
+                                   </div>
+                              </form>
+                         </div>
+
+                         <br>
+
+                         <label class="control-label">Week 14</label>
+
+                         <ul class="list">
+                              <li><a href="">School Reopen</a></li>
+                              <li><a href="">Breakdown of Work</a></li>
+                              <li><a href="">Finish by Week 16</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="col-lg-9 col-xs-12">
+                         <div class="row">
+                              <div class="col-sm-6">
+                                   <div class="courses-thumb courses-thumb-secondary">
+                                        <div class="courses-top">
+                                             <div class="courses-image">
+                                                  <img src="images/product-1-720x480.jpg" class="img-responsive" alt="">
+                                             </div>
+                                             <div class="courses-date">
+                                                  <span title="Author"><i class="fa fa-user"></i> Peter Liau</span>
+                                                  <span title="Date"><i class="fa fa-calendar"></i> 16/10/2023 2:30pm</span>
+                                                  <span title="Views"><i class="fa fa-eye"></i>7</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="courses-detail">
+                                             <h3><a href="Week 1.html">Week 1 Blog</a></h3>
+                                        </div>
+
+                                        <div class="courses-info">
+                                             <a href="Week 1.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-sm-6">
+                                   <div class="courses-thumb courses-thumb-secondary">
+                                        <div class="courses-top">
+                                             <div class="courses-image">
+                                                  <img src="images/product-2-720x480.jpg" class="img-responsive" alt="">
+                                             </div>
+                                             <div class="courses-date">
+                                                  <span title="Author"><i class="fa fa-user"></i> Peter Liau</span>
+                                                  <span title="Date"><i class="fa fa-calendar"></i> 23/10/2023 10:30</span>
+                                                  <span title="Views"><i class="fa fa-eye"></i> 11</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="courses-detail">
+                                             <h3><a href="Week 2.html">Week 2 Blog</a></h3>
+                                        </div>
+
+                                        <div class="courses-info">
+                                             <a href="Week 2.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-sm-6">
+                                   <div class="courses-thumb courses-thumb-secondary">
+                                        <div class="courses-top">
+                                             <div class="courses-image">
+                                                  <img src="images/product-3-720x480.jpg" class="img-responsive" alt="">
+                                             </div>
+                                             <div class="courses-date">
+                                                  <span title="Author"><i class="fa fa-user"></i> Peter Liau</span>
+                                                  <span title="Date"><i class="fa fa-calendar"></i> 30/10/2023 10:30</span>
+                                                  <span title="Views"><i class="fa fa-eye"></i> 12</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="courses-detail">
+                                             <h3><a href="Week 3.html">Week 3 Blog</a></h3>
+                                        </div>
+
+                                        <div class="courses-info">
+                                             <a href="Week 3.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-sm-6">
+                                   <div class="courses-thumb courses-thumb-secondary">
+                                        <div class="courses-top">
+                                             <div class="courses-image">
+                                                  <img src="images/product-4-720x480.jpg" class="img-responsive" alt="">
+                                             </div>
+                                             <div class="courses-date">
+                                                  <span title="Author"><i class="fa fa-user"></i> Peter Liau</span>
+                                                  <span title="Date"><i class="fa fa-calendar"></i> 06/11/2023 10:30</span>
+                                                  <span title="Views"><i class="fa fa-eye"></i> 12</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="courses-detail">
+                                             <h3><a href="Week 4.html">Week 4 Blog</a></h3>
+                                        </div>
+
+                                        <div class="courses-info">
+                                             <a href="Week 4.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-sm-6">
+                                   <div class="courses-thumb courses-thumb-secondary">
+                                        <div class="courses-top">
+                                             <div class="courses-image">
+                                                  <img src="images/product-5-720x480.jpg" class="img-responsive" alt="">
+                                             </div>
+                                             <div class="courses-date">
+                                                  <span title="Author"><i class="fa fa-user"></i> Peter Liau</span>
+                                                  <span title="Date"><i class="fa fa-calendar"></i> 13/11/2023 10:30</span>
+                                                  <span title="Views"><i class="fa fa-eye"></i> 12</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="courses-detail">
+                                             <h3><a href="Week 5.html">Week 5 Blog</a></h3>
+                                        </div>
+
+                                        <div class="courses-info">
+                                             <a href="Week 5.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-sm-6">
+                                   <div class="courses-thumb courses-thumb-secondary">
+                                        <div class="courses-top">
+                                             <div class="courses-image">
+                                                  <img src="images/product-6-720x480.jpg" class="img-responsive" alt="">
+                                             </div>
+                                             <div class="courses-date">
+                                                  <span title="Author"><i class="fa fa-user"></i> Peter Liau</span>
+                                                  <span title="Date"><i class="fa fa-calendar"></i> 20/11/2023 10:30</span>
+                                                  <span title="Views"><i class="fa fa-eye"></i> 12</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="courses-detail">
+                                             <h3><a href="Week 8.html">Week 12 Blog</a></h3>
+                                        </div>
+
+                                        <div class="courses-info">
+                                             <a href="Week 8.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- FOOTER -->
+     <footer id="footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Headquarters</h2>
+                              </div>
+                              <address>
+                                   <p>Ngee Ann Polytechnic</p>
+                              </address>
+
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2024 FRATS Peter Liau</p>
+                                   <p>Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></p>
+                              </div>
+                         </div>
+                    </div>
+
+                   
+
+     <div class="modal fade bs-example-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                         <h4 class="modal-title" id="gridSystemModalLabel">Book Now</h4>
+                    </div>
+                    
+                    <div class="modal-body">
+                         <form action="#" id="contact-form">
+                              <div class="row">
+                                   <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Pick-up location" required>
+                                   </div>
+
+                                   <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Return location" required>
+                                   </div>
+                              </div>
+
+                              <div class="row">
+                                   <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Pick-up date/time" required>
+                                   </div>
+
+                                   <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Return date/time" required>
+                                   </div>
+                              </div>
+                              <input type="text" class="form-control" placeholder="Enter full name" required>
+
+                              <div class="row">
+                                   <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Enter email address" required>
+                                   </div>
+
+                                   <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Enter phone" required>
+                                   </div>
+                              </div>
+                         </form>
+                    </div>
+
+                    <div class="modal-footer">
+                         <button type="button" class="section-btn btn btn-primary">Book Now</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
 
 </body>
 </html>
